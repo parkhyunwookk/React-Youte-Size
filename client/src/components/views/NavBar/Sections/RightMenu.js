@@ -30,9 +30,12 @@ function RightMenu(props) {
         </Menu.Item>
       </Menu>
     )
-  } else { // 로그인 한 경우
+  } else { // 로그인한 경우
     return (
       <Menu mode={props.mode}>
+        <Menu.Item key="upload">
+          <a href="/video/upload">Video</a>
+        </Menu.Item>
         <Menu.Item key="logout">
           <a onClick={logoutHandler}>Logout</a>
         </Menu.Item>
