@@ -33,7 +33,10 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 app.use(cookieParser());
 
+// client request에서 video 선택시 여기로 와서 video.js로 간다.
 app.use('/api/users', require('./routes/users'));
+app.use('/api/video', require('./routes/video'));
+
 
 
 //use this to show the image you have in node js server to client (react js)
