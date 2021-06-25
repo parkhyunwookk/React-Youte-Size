@@ -35,7 +35,7 @@ const videoSchema = mongoose.Schema(
     },
   },
   { timestamps: true }
-);
+); //만든 데잇, 업데이트 데잇 표시
 
 const Video = mongoose.model("Video", videoSchema);
 
