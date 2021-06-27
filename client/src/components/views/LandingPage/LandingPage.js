@@ -22,7 +22,6 @@ function LandingPage() {
   }, []);
 
   const renderCards = Video.map((video, index) => {
-    console.log(video);
     var minutes = Math.floor(video.duration / 60);
     var seconds = Math.floor(video.duration - minutes * 60);
 
